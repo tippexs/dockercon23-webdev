@@ -1,0 +1,14 @@
+{
+  "listeners": {
+    "*:80": {"pass": "routes"}
+  },
+  "routes": [
+    {"action": { "pass": "applications/php"}}
+  ],
+  "applications": {
+    "php": {
+      "type": "php",
+      "root": "/usr/share/unit/"
+    }
+  }
+}
